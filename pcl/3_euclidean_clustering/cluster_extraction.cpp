@@ -11,20 +11,20 @@
 #include <pcl/segmentation/extract_clusters.h>
 
 
-int 
+int
 main (int argc, char** argv)
 {
   // Read in the cloud data
   pcl::PCDReader reader;
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>), cloud_f (new pcl::PointCloud<pcl::PointXYZ>);
-  reader.read ("table_scene_lms400.pcd", *cloud);
+  reader.read ("../../table_scene_lms400.pcd", *cloud);
   std::cout << "PointCloud before filtering has: " << cloud->size () << " data points." << std::endl; //*
 
   // Create the filtering object: downsample the dataset using a leaf size of 1cm
   pcl::VoxelGrid<pcl::PointXYZ> vg;
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_filtered (new pcl::PointCloud<pcl::PointXYZ>);
   vg.setInputCloud (cloud);
-  vg.setLeafSize (0.01f, 0.01f, 0.01f); //Set the voxel grid 	
+  vg.setLeafSize (0.01f, 0.01f, 0.01f); //Set the voxel grid
   vg.filter (*cloud_filtered);
   std::cout << "PointCloud after filtering has: " << cloud_filtered->size ()  << " data points." << std::endl; //*
 
@@ -70,12 +70,12 @@ main (int argc, char** argv)
 
   // Creating the KdTree object for the search method of the extraction
   pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ>);
-  tree->setInputCloud (cloud_filtered); 
-  
+  tree->setInputCloud (cloud_filtered);
+
   // Here we are creating a vector of PointIndices, which contain the actual index information in a vector<int>. The indices of each detected cluster are saved here.
   std::vector<pcl::PointIndices> cluster_indices;
   pcl::EuclideanClusterExtraction<pcl::PointXYZ> ec;
-  
+
   //Set the spatial tolerance for new cluster candidates
   //If you take a very small value, it can happen that an actual object can be seen as multiple clusters. On the other hand, if you set the value too high, it could happen, that multiple objects are seen as one cluster
   ec.setClusterTolerance (0.02); // 2cm
@@ -88,9 +88,9 @@ main (int argc, char** argv)
   ec.extract (cluster_indices);
 
   /**
-  
-  Now we extracted the clusters out of our point cloud and saved the indices in cluster_indices. 
-  
+
+  Now we extracted the clusters out of our point cloud and saved the indices in cluster_indices.
+
   To separate each cluster out of the vector<PointIndices> we have to iterate through cluster_indices, create a new PointCloud for each entry and write all points of the current cluster in the PointCloud.
 
   **/
@@ -100,6 +100,7 @@ main (int argc, char** argv)
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_cluster (new pcl::PointCloud<pcl::PointXYZ>);
     for (std::vector<int>::const_iterator pit = it->indices.begin (); pit != it->indices.end (); ++pit)
       cloud_cluster->push_back ((*cloud_filtered)[*pit]); //*
+      
     cloud_cluster->width = cloud_cluster->size ();
     cloud_cluster->height = 1;
     cloud_cluster->is_dense = true;

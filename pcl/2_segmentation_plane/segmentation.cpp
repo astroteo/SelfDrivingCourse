@@ -7,6 +7,7 @@
 #include <pcl/segmentation/sac_segmentation.h>
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/filters/extract_indices.h>
+#include <pcl/visualization/cloud_viewer.h>
 
 int
 main (int argc, char** argv)
@@ -16,7 +17,7 @@ main (int argc, char** argv)
 
   // Fill in the cloud data
   pcl::PCDReader reader;
-  reader.read ("table_scene_lms400.pcd", *cloud_blob);
+  reader.read ("../../table_scene_lms400.pcd", *cloud_blob);
 
   std::cerr << "PointCloud before filtering: " << cloud_blob->width * cloud_blob->height << " data points." << std::endl;
 
@@ -33,7 +34,7 @@ main (int argc, char** argv)
 
   // Write the downsampled version to disk
   pcl::PCDWriter writer;
-  writer.write<pcl::PointXYZ> ("table_scene_lms400_downsampled.pcd", *cloud_filtered, false);
+  writer.write<pcl::PointXYZ> ("../../table_scene_lms400_downsampled.pcd", *cloud_filtered, false);
 
   pcl::ModelCoefficients::Ptr coefficients (new pcl::ModelCoefficients ());
   pcl::PointIndices::Ptr inliers (new pcl::PointIndices ());
@@ -45,7 +46,7 @@ main (int argc, char** argv)
   seg.setModelType (pcl::SACMODEL_PLANE);
   seg.setMethodType (pcl::SAC_RANSAC);
   seg.setMaxIterations (1000);
-  seg.setDistanceThreshold (0.1); // determines how close a point must be to the model in order to be considered an inlier
+  seg.setDistanceThreshold (0.01); // determines how close a point must be to the model in order to be considered an inlier
 
   // Create the filtering object
   pcl::ExtractIndices<pcl::PointXYZ> extract;
@@ -64,7 +65,7 @@ main (int argc, char** argv)
     }
 
     // Extract the inliers (here we extract the plane and we moved the plane to cloud_p)
-    extract.setInputCloud (cloud_filtered); 
+    extract.setInputCloud (cloud_filtered);
     extract.setIndices (inliers);
     extract.setNegative (false);
     extract.filter (*cloud_p);
@@ -79,8 +80,25 @@ main (int argc, char** argv)
     extract.filter (*cloud_f);
     cloud_filtered.swap (cloud_f);
     i++;
+
   }
+
+  pcl::PointCloud<pcl::PointXYZRGB>::Ptr  cloud_display((new pcl::PointCloud<pcl::PointXYZRGB>)) ;
+  std::uint8_t r = 255, g = 0, b = 0;
+
+  for(auto pp : cloud_f->points)
+  {
+    pcl::PointXYZRGB pp_rgb(pp.x,pp.y,pp.z);
+
+    pp_rgb.rgb = (static_cast<uint32_t>(r) << 16 | static_cast<uint32_t>(g) << 8 | static_cast<uint32_t>(b));
+    cloud_display->push_back(pp_rgb);
+  }
+  //pcl::fromPCLPointCloud2( *cloud_f, *cloud_display );
+  pcl::visualization::CloudViewer viewer ("Simple Cloud Viewer");
+  viewer.showCloud(cloud_display);
+
+  while (!viewer.wasStopped ())
+  {}
 
   return (0);
 }
-

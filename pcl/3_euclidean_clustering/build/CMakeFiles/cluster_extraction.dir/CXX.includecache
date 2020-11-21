@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/media/nacho/DATA/AD_course_2020_code/Sensors/pcl/euclidean_clustering/cluster_extraction.cpp
+/home/teo-ssd/Documents/SelfDrivingCourse/pcl/3_euclidean_clustering/cluster_extraction.cpp
 pcl/ModelCoefficients.h
 -
 pcl/point_types.h
@@ -30,7 +30,7 @@ pcl/segmentation/sac_segmentation.h
 pcl/segmentation/extract_clusters.h
 -
 
-/usr/include/pcl-1.8/pcl/ModelCoefficients.h
+/usr/include/pcl-1.7/pcl/ModelCoefficients.h
 string
 -
 vector
@@ -40,7 +40,7 @@ ostream
 pcl/PCLHeader.h
 -
 
-/usr/include/pcl-1.8/pcl/PCLHeader.h
+/usr/include/pcl-1.7/pcl/PCLHeader.h
 string
 -
 vector
@@ -52,7 +52,7 @@ pcl/pcl_macros.h
 ostream
 -
 
-/usr/include/pcl-1.8/pcl/PCLImage.h
+/usr/include/pcl-1.7/pcl/PCLImage.h
 string
 -
 vector
@@ -62,7 +62,7 @@ ostream
 pcl/PCLHeader.h
 -
 
-/usr/include/pcl-1.8/pcl/PCLPointCloud2.h
+/usr/include/pcl-1.7/pcl/PCLPointCloud2.h
 string
 -
 vector
@@ -76,7 +76,7 @@ pcl/PCLHeader.h
 pcl/PCLPointField.h
 -
 
-/usr/include/pcl-1.8/pcl/PCLPointField.h
+/usr/include/pcl-1.7/pcl/PCLPointField.h
 string
 -
 vector
@@ -88,7 +88,7 @@ boost/shared_ptr.hpp
 pcl/pcl_macros.h
 -
 
-/usr/include/pcl-1.8/pcl/PointIndices.h
+/usr/include/pcl-1.7/pcl/PointIndices.h
 string
 -
 vector
@@ -98,7 +98,7 @@ ostream
 pcl/PCLHeader.h
 -
 
-/usr/include/pcl-1.8/pcl/PolygonMesh.h
+/usr/include/pcl-1.7/pcl/PolygonMesh.h
 string
 -
 vector
@@ -112,7 +112,7 @@ pcl/PCLPointCloud2.h
 pcl/Vertices.h
 -
 
-/usr/include/pcl-1.8/pcl/TextureMesh.h
+/usr/include/pcl-1.7/pcl/TextureMesh.h
 Eigen/Core
 -
 string
@@ -122,19 +122,17 @@ pcl/PCLPointCloud2.h
 pcl/Vertices.h
 -
 
-/usr/include/pcl-1.8/pcl/Vertices.h
+/usr/include/pcl-1.7/pcl/Vertices.h
 string
 -
 vector
 -
 ostream
 -
-boost/shared_ptr.hpp
--
 pcl/pcl_macros.h
 -
 
-/usr/include/pcl-1.8/pcl/cloud_iterator.h
+/usr/include/pcl-1.7/pcl/cloud_iterator.h
 pcl/point_cloud.h
 -
 pcl/PointIndices.h
@@ -144,7 +142,7 @@ pcl/correspondence.h
 pcl/impl/cloud_iterator.hpp
 -
 
-/usr/include/pcl-1.8/pcl/common/centroid.h
+/usr/include/pcl-1.7/pcl/common/centroid.h
 pcl/point_cloud.h
 -
 pcl/point_traits.h
@@ -158,7 +156,7 @@ pcl/common/impl/accumulators.hpp
 pcl/common/impl/centroid.hpp
 -
 
-/usr/include/pcl-1.8/pcl/common/common.h
+/usr/include/pcl-1.7/pcl/common/common.h
 pcl/pcl_base.h
 -
 cfloat
@@ -166,19 +164,19 @@ cfloat
 pcl/common/impl/common.hpp
 -
 
-/usr/include/pcl-1.8/pcl/common/concatenate.h
+/usr/include/pcl-1.7/pcl/common/concatenate.h
 pcl/conversions.h
 -
 
-/usr/include/pcl-1.8/pcl/common/copy_point.h
+/usr/include/pcl-1.7/pcl/common/copy_point.h
 pcl/common/impl/copy_point.hpp
 -
 
-/usr/include/pcl-1.8/pcl/common/distances.h
+/usr/include/pcl-1.7/pcl/common/distances.h
 pcl/common/common.h
 -
 
-/usr/include/pcl-1.8/pcl/common/eigen.h
+/usr/include/pcl-1.7/pcl/common/eigen.h
 cmath
 -
 pcl/ModelCoefficients.h
@@ -202,7 +200,7 @@ Eigen/Eigenvalues
 pcl/common/impl/eigen.hpp
 -
 
-/usr/include/pcl-1.8/pcl/common/impl/accumulators.hpp
+/usr/include/pcl-1.7/pcl/common/impl/accumulators.hpp
 map
 -
 boost/mpl/filter_view.hpp
@@ -216,7 +214,7 @@ boost/fusion/include/as_vector.hpp
 pcl/point_types.h
 -
 
-/usr/include/pcl-1.8/pcl/common/impl/centroid.hpp
+/usr/include/pcl-1.7/pcl/common/impl/centroid.hpp
 pcl/common/centroid.h
 -
 pcl/conversions.h
@@ -224,13 +222,13 @@ pcl/conversions.h
 boost/mpl/size.hpp
 -
 
-/usr/include/pcl-1.8/pcl/common/impl/common.hpp
+/usr/include/pcl-1.7/pcl/common/impl/common.hpp
 pcl/point_types.h
 -
 pcl/common/common.h
 -
 
-/usr/include/pcl-1.8/pcl/common/impl/copy_point.hpp
+/usr/include/pcl-1.7/pcl/common/impl/copy_point.hpp
 pcl/point_types.h
 -
 pcl/point_traits.h
@@ -240,11 +238,11 @@ pcl/for_each_type.h
 pcl/common/concatenate.h
 -
 
-/usr/include/pcl-1.8/pcl/common/impl/eigen.hpp
+/usr/include/pcl-1.7/pcl/common/impl/eigen.hpp
 pcl/console/print.h
 -
 
-/usr/include/pcl-1.8/pcl/common/impl/io.hpp
+/usr/include/pcl-1.7/pcl/common/impl/io.hpp
 pcl/common/concatenate.h
 -
 pcl/common/copy_point.h
@@ -252,11 +250,11 @@ pcl/common/copy_point.h
 pcl/point_types.h
 -
 
-/usr/include/pcl-1.8/pcl/common/impl/projection_matrix.hpp
+/usr/include/pcl-1.7/pcl/common/impl/projection_matrix.hpp
 pcl/cloud_iterator.h
 -
 
-/usr/include/pcl-1.8/pcl/common/io.h
+/usr/include/pcl-1.7/pcl/common/io.h
 string
 -
 pcl/pcl_base.h
@@ -272,11 +270,11 @@ locale
 pcl/common/impl/io.hpp
 -
 
-/usr/include/pcl-1.8/pcl/common/point_tests.h
+/usr/include/pcl-1.7/pcl/common/point_tests.h
 Eigen/src/StlSupport/details.h
 -
 
-/usr/include/pcl-1.8/pcl/common/projection_matrix.h
+/usr/include/pcl-1.7/pcl/common/projection_matrix.h
 pcl/common/eigen.h
 -
 pcl/console/print.h
@@ -284,17 +282,15 @@ pcl/console/print.h
 pcl/common/impl/projection_matrix.hpp
 -
 
-/usr/include/pcl-1.8/pcl/common/time.h
+/usr/include/pcl-1.7/pcl/common/time.h
 cmath
--
-queue
 -
 string
 -
 boost/date_time/posix_time/posix_time.hpp
 -
 
-/usr/include/pcl-1.8/pcl/console/print.h
+/usr/include/pcl-1.7/pcl/console/print.h
 stdio.h
 -
 stdarg.h
@@ -304,7 +300,7 @@ pcl/pcl_exports.h
 pcl/pcl_config.h
 -
 
-/usr/include/pcl-1.8/pcl/conversions.h
+/usr/include/pcl-1.7/pcl/conversions.h
 pcl/PCLPointField.h
 -
 pcl/PCLPointCloud2.h
@@ -324,7 +320,7 @@ pcl/console/print.h
 boost/foreach.hpp
 -
 
-/usr/include/pcl-1.8/pcl/correspondence.h
+/usr/include/pcl-1.7/pcl/correspondence.h
 boost/shared_ptr.hpp
 -
 Eigen/StdVector
@@ -334,7 +330,7 @@ Eigen/Geometry
 pcl/pcl_exports.h
 -
 
-/usr/include/pcl-1.8/pcl/exceptions.h
+/usr/include/pcl-1.7/pcl/exceptions.h
 stdexcept
 -
 sstream
@@ -344,7 +340,7 @@ pcl/pcl_macros.h
 boost/current_function.hpp
 -
 
-/usr/include/pcl-1.8/pcl/features/feature.h
+/usr/include/pcl-1.7/pcl/features/feature.h
 boost/function.hpp
 -
 boost/bind.hpp
@@ -356,15 +352,15 @@ pcl/search/search.h
 pcl/features/impl/feature.hpp
 -
 
-/usr/include/pcl-1.8/pcl/features/impl/feature.hpp
+/usr/include/pcl-1.7/pcl/features/impl/feature.hpp
 pcl/search/pcl_search.h
 -
 
-/usr/include/pcl-1.8/pcl/features/impl/normal_3d.hpp
+/usr/include/pcl-1.7/pcl/features/impl/normal_3d.hpp
 pcl/features/normal_3d.h
 -
 
-/usr/include/pcl-1.8/pcl/features/normal_3d.h
+/usr/include/pcl-1.7/pcl/features/normal_3d.h
 pcl/features/feature.h
 -
 pcl/common/centroid.h
@@ -372,7 +368,7 @@ pcl/common/centroid.h
 pcl/features/impl/normal_3d.hpp
 -
 
-/usr/include/pcl-1.8/pcl/filters/boost.h
+/usr/include/pcl-1.7/pcl/filters/boost.h
 boost/random.hpp
 -
 boost/random/normal_distribution.hpp
@@ -396,16 +392,14 @@ boost/function.hpp
 boost/optional.hpp
 -
 
-/usr/include/pcl-1.8/pcl/filters/extract_indices.h
+/usr/include/pcl-1.7/pcl/filters/extract_indices.h
 pcl/filters/filter_indices.h
 -
 pcl/filters/impl/extract_indices.hpp
 -
 
-/usr/include/pcl-1.8/pcl/filters/filter.h
+/usr/include/pcl-1.7/pcl/filters/filter.h
 pcl/pcl_base.h
--
-pcl/common/io.h
 -
 pcl/conversions.h
 -
@@ -418,33 +412,31 @@ pcl/PointIndices.h
 pcl/filters/impl/filter.hpp
 -
 
-/usr/include/pcl-1.8/pcl/filters/filter_indices.h
+/usr/include/pcl-1.7/pcl/filters/filter_indices.h
 pcl/filters/filter.h
 -
 pcl/filters/impl/filter_indices.hpp
 -
 
-/usr/include/pcl-1.8/pcl/filters/impl/extract_indices.hpp
+/usr/include/pcl-1.7/pcl/filters/impl/extract_indices.hpp
 pcl/filters/extract_indices.h
 -
 pcl/common/io.h
 -
 
-/usr/include/pcl-1.8/pcl/filters/impl/filter.hpp
+/usr/include/pcl-1.7/pcl/filters/impl/filter.hpp
 pcl/pcl_macros.h
 -
 pcl/filters/filter.h
 -
 
-/usr/include/pcl-1.8/pcl/filters/impl/filter_indices.hpp
+/usr/include/pcl-1.7/pcl/filters/impl/filter_indices.hpp
 pcl/pcl_macros.h
 -
 pcl/filters/filter_indices.h
 -
 
-/usr/include/pcl-1.8/pcl/filters/impl/voxel_grid.hpp
-pcl/common/centroid.h
--
+/usr/include/pcl-1.7/pcl/filters/impl/voxel_grid.hpp
 pcl/common/common.h
 -
 pcl/common/io.h
@@ -452,7 +444,7 @@ pcl/common/io.h
 pcl/filters/voxel_grid.h
 -
 
-/usr/include/pcl-1.8/pcl/filters/voxel_grid.h
+/usr/include/pcl-1.7/pcl/filters/voxel_grid.h
 pcl/filters/boost.h
 -
 pcl/filters/filter.h
@@ -462,7 +454,7 @@ map
 pcl/filters/impl/voxel_grid.hpp
 -
 
-/usr/include/pcl-1.8/pcl/for_each_type.h
+/usr/include/pcl-1.7/pcl/for_each_type.h
 boost/mpl/is_sequence.hpp
 -
 boost/mpl/begin_end.hpp
@@ -484,25 +476,11 @@ boost/mpl/aux_/unwrap.hpp
 boost/type_traits/is_same.hpp
 -
 
-/usr/include/pcl-1.8/pcl/impl/cloud_iterator.hpp
+/usr/include/pcl-1.7/pcl/impl/cloud_iterator.hpp
 pcl/cloud_iterator.h
 -
 
-/usr/include/pcl-1.8/pcl/impl/instantiate.hpp
-pcl/pcl_config.h
--
-boost/preprocessor/seq/for_each.hpp
--
-boost/preprocessor/seq/for_each_product.hpp
--
-boost/preprocessor/seq/to_tuple.hpp
--
-boost/preprocessor/cat.hpp
--
-boost/preprocessor/expand.hpp
--
-
-/usr/include/pcl-1.8/pcl/impl/pcl_base.hpp
+/usr/include/pcl-1.7/pcl/impl/pcl_base.hpp
 pcl/pcl_base.h
 -
 pcl/console/print.h
@@ -510,7 +488,7 @@ pcl/console/print.h
 cstddef
 -
 
-/usr/include/pcl-1.8/pcl/impl/point_types.hpp
+/usr/include/pcl-1.7/pcl/impl/point_types.hpp
 Eigen/Core
 -
 ostream
@@ -518,9 +496,7 @@ ostream
 pcl/common/point_tests.h
 -
 
-/usr/include/pcl-1.8/pcl/io/boost.h
-boost/version.hpp
--
+/usr/include/pcl-1.7/pcl/io/boost.h
 boost/numeric/conversion/cast.hpp
 -
 boost/thread/mutex.hpp
@@ -580,7 +556,7 @@ boost/signals2.hpp
 boost/signals2/slot.hpp
 -
 
-/usr/include/pcl-1.8/pcl/io/file_io.h
+/usr/include/pcl-1.7/pcl/io/file_io.h
 pcl/pcl_macros.h
 -
 pcl/common/io.h
@@ -596,7 +572,7 @@ pcl/PolygonMesh.h
 pcl/TextureMesh.h
 -
 
-/usr/include/pcl-1.8/pcl/io/impl/pcd_io.hpp
+/usr/include/pcl-1.7/pcl/io/impl/pcd_io.hpp
 fstream
 -
 fcntl.h
@@ -620,11 +596,11 @@ sys/mman.h
 pcl/io/lzf.h
 -
 
-/usr/include/pcl-1.8/pcl/io/lzf.h
+/usr/include/pcl-1.7/pcl/io/lzf.h
 pcl/pcl_macros.h
 -
 
-/usr/include/pcl-1.8/pcl/io/pcd_io.h
+/usr/include/pcl-1.7/pcl/io/pcd_io.h
 pcl/point_cloud.h
 -
 pcl/io/file_io.h
@@ -632,11 +608,11 @@ pcl/io/file_io.h
 pcl/io/impl/pcd_io.hpp
 -
 
-/usr/include/pcl-1.8/pcl/kdtree/flann.h
+/usr/include/pcl-1.7/pcl/kdtree/flann.h
 flann/flann.hpp
 -
 
-/usr/include/pcl-1.8/pcl/kdtree/impl/kdtree_flann.hpp
+/usr/include/pcl-1.7/pcl/kdtree/impl/kdtree_flann.hpp
 cstdio
 -
 pcl/kdtree/kdtree_flann.h
@@ -646,7 +622,7 @@ pcl/kdtree/flann.h
 pcl/console/print.h
 -
 
-/usr/include/pcl-1.8/pcl/kdtree/kdtree.h
+/usr/include/pcl-1.7/pcl/kdtree/kdtree.h
 limits.h
 -
 pcl/pcl_macros.h
@@ -660,7 +636,7 @@ pcl/common/io.h
 pcl/common/copy_point.h
 -
 
-/usr/include/pcl-1.8/pcl/kdtree/kdtree_flann.h
+/usr/include/pcl-1.7/pcl/kdtree/kdtree_flann.h
 pcl/kdtree/kdtree.h
 -
 pcl/kdtree/flann.h
@@ -670,41 +646,41 @@ boost/shared_array.hpp
 pcl/kdtree/impl/kdtree_flann.hpp
 -
 
-/usr/include/pcl-1.8/pcl/octree/impl/octree_base.hpp
+/usr/include/pcl-1.7/pcl/octree/impl/octree_pointcloud.hpp
 vector
 -
-pcl/impl/instantiate.hpp
--
-
-/usr/include/pcl-1.8/pcl/octree/impl/octree_iterator.hpp
-
-/usr/include/pcl-1.8/pcl/octree/impl/octree_pointcloud.hpp
 assert.h
 -
 pcl/common/common.h
 -
-pcl/octree/impl/octree_base.hpp
--
 
-/usr/include/pcl-1.8/pcl/octree/impl/octree_search.hpp
+/usr/include/pcl-1.7/pcl/octree/impl/octree_search.hpp
+pcl/point_cloud.h
+-
+pcl/point_types.h
+-
+pcl/common/common.h
+-
 assert.h
 -
 
-/usr/include/pcl-1.8/pcl/octree/octree_base.h
+/usr/include/pcl-1.7/pcl/octree/octree_base.h
+cstddef
+-
 vector
 -
-pcl/octree/octree_nodes.h
--
-pcl/octree/octree_container.h
--
-pcl/octree/octree_key.h
--
-pcl/octree/octree_iterator.h
--
-pcl/octree/impl/octree_base.hpp
--
+octree_nodes.h
+/usr/include/pcl-1.7/pcl/octree/octree_nodes.h
+octree_container.h
+/usr/include/pcl-1.7/pcl/octree/octree_container.h
+octree_key.h
+/usr/include/pcl-1.7/pcl/octree/octree_key.h
+octree_iterator.h
+/usr/include/pcl-1.7/pcl/octree/octree_iterator.h
 
-/usr/include/pcl-1.8/pcl/octree/octree_container.h
+/usr/include/pcl-1.7/pcl/octree/octree_container.h
+string.h
+-
 vector
 -
 cstddef
@@ -712,57 +688,73 @@ cstddef
 pcl/pcl_macros.h
 -
 
-/usr/include/pcl-1.8/pcl/octree/octree_iterator.h
+/usr/include/pcl-1.7/pcl/octree/octree_iterator.h
 cstddef
 -
 vector
 -
 deque
 -
-pcl/octree/octree_nodes.h
+octree_nodes.h
+/usr/include/pcl-1.7/pcl/octree/octree_nodes.h
+octree_key.h
+/usr/include/pcl-1.7/pcl/octree/octree_key.h
+pcl/point_cloud.h
 -
-pcl/octree/octree_key.h
+pcl/point_types.h
 -
 iterator
 -
-pcl/octree/impl/octree_iterator.hpp
+
+/usr/include/pcl-1.7/pcl/octree/octree_key.h
+string
 -
 
-/usr/include/pcl-1.8/pcl/octree/octree_key.h
-
-/usr/include/pcl-1.8/pcl/octree/octree_nodes.h
+/usr/include/pcl-1.7/pcl/octree/octree_nodes.h
 cstddef
 -
 assert.h
+-
+cstring
+-
+string.h
 -
 Eigen/Core
 -
 pcl/pcl_macros.h
 -
 octree_container.h
-/usr/include/pcl-1.8/pcl/octree/octree_container.h
+/usr/include/pcl-1.7/pcl/octree/octree_container.h
 
-/usr/include/pcl-1.8/pcl/octree/octree_pointcloud.h
-pcl/octree/octree_base.h
--
+/usr/include/pcl-1.7/pcl/octree/octree_pointcloud.h
+octree_base.h
+/usr/include/pcl-1.7/pcl/octree/octree_base.h
 pcl/point_cloud.h
 -
 pcl/point_types.h
 -
+queue
+-
 vector
+-
+algorithm
+-
+iostream
 -
 pcl/octree/impl/octree_pointcloud.hpp
 -
 
-/usr/include/pcl-1.8/pcl/octree/octree_search.h
+/usr/include/pcl-1.7/pcl/octree/octree_search.h
 pcl/point_cloud.h
 -
-pcl/octree/octree_pointcloud.h
+pcl/point_types.h
 -
+octree_pointcloud.h
+/usr/include/pcl-1.7/pcl/octree/octree_pointcloud.h
 pcl/octree/impl/octree_search.hpp
 -
 
-/usr/include/pcl-1.8/pcl/pcl_base.h
+/usr/include/pcl-1.7/pcl/pcl_base.h
 pcl/pcl_macros.h
 -
 boost/shared_ptr.hpp
@@ -780,11 +772,11 @@ pcl/PCLPointCloud2.h
 pcl/impl/pcl_base.hpp
 -
 
-/usr/include/pcl-1.8/pcl/pcl_config.h
+/usr/include/pcl-1.7/pcl/pcl_config.h
 
-/usr/include/pcl-1.8/pcl/pcl_exports.h
+/usr/include/pcl-1.7/pcl/pcl_exports.h
 
-/usr/include/pcl-1.8/pcl/pcl_macros.h
+/usr/include/pcl-1.7/pcl/pcl_macros.h
 pcl/pcl_config.h
 -
 boost/cstdint.hpp
@@ -809,10 +801,8 @@ stdio.h
 -
 math.h
 -
-mm_malloc.h
--
 
-/usr/include/pcl-1.8/pcl/point_cloud.h
+/usr/include/pcl-1.7/pcl/point_cloud.h
 Eigen/StdVector
 -
 Eigen/Geometry
@@ -824,7 +814,7 @@ pcl/exceptions.h
 pcl/point_traits.h
 -
 
-/usr/include/pcl-1.8/pcl/point_representation.h
+/usr/include/pcl-1.7/pcl/point_representation.h
 pcl/point_types.h
 -
 pcl/pcl_macros.h
@@ -832,9 +822,9 @@ pcl/pcl_macros.h
 pcl/for_each_type.h
 -
 
-/usr/include/pcl-1.8/pcl/point_traits.h
+/usr/include/pcl-1.7/pcl/point_traits.h
 pcl/pcl_macros.h
-/usr/include/pcl-1.8/pcl/pcl/pcl_macros.h
+/usr/include/pcl-1.7/pcl/pcl/pcl_macros.h
 pcl/PCLPointField.h
 -
 boost/type_traits/remove_all_extents.hpp
@@ -850,7 +840,7 @@ Eigen/Core
 Eigen/src/StlSupport/details.h
 -
 
-/usr/include/pcl-1.8/pcl/point_types.h
+/usr/include/pcl-1.7/pcl/point_types.h
 pcl/pcl_macros.h
 -
 bitset
@@ -866,7 +856,7 @@ boost/mpl/vector.hpp
 pcl/impl/point_types.hpp
 -
 
-/usr/include/pcl-1.8/pcl/register_point_struct.h
+/usr/include/pcl-1.7/pcl/register_point_struct.h
 pcl/pcl_macros.h
 -
 pcl/point_traits.h
@@ -890,49 +880,49 @@ boost/type_traits.hpp
 stddef.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/boost.h
+/usr/include/pcl-1.7/pcl/sample_consensus/boost.h
 boost/random.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/eigen.h
+/usr/include/pcl-1.7/pcl/sample_consensus/eigen.h
 Eigen/Core
 -
 unsupported/Eigen/NonLinearOptimization
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/lmeds.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/lmeds.hpp
 pcl/sample_consensus/lmeds.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/mlesac.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/mlesac.hpp
 pcl/sample_consensus/mlesac.h
 -
 pcl/point_types.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/msac.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/msac.hpp
 pcl/sample_consensus/msac.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/prosac.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/prosac.hpp
 boost/math/distributions/binomial.hpp
 -
 pcl/sample_consensus/prosac.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/ransac.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/ransac.hpp
 pcl/sample_consensus/ransac.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/rmsac.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/rmsac.hpp
 pcl/sample_consensus/rmsac.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/rransac.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/rransac.hpp
 pcl/sample_consensus/rransac.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_circle.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_circle.hpp
 pcl/sample_consensus/eigen.h
 -
 pcl/sample_consensus/sac_model_circle.h
@@ -940,7 +930,7 @@ pcl/sample_consensus/sac_model_circle.h
 pcl/common/concatenate.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_circle3d.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_circle3d.hpp
 pcl/sample_consensus/eigen.h
 -
 pcl/sample_consensus/sac_model_circle3d.h
@@ -948,7 +938,7 @@ pcl/sample_consensus/sac_model_circle3d.h
 pcl/common/concatenate.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_cone.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_cone.hpp
 pcl/sample_consensus/eigen.h
 -
 pcl/sample_consensus/sac_model_cone.h
@@ -956,7 +946,7 @@ pcl/sample_consensus/sac_model_cone.h
 pcl/common/concatenate.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_cylinder.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_cylinder.hpp
 pcl/sample_consensus/eigen.h
 -
 pcl/sample_consensus/sac_model_cylinder.h
@@ -964,7 +954,7 @@ pcl/sample_consensus/sac_model_cylinder.h
 pcl/common/concatenate.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_line.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_line.hpp
 pcl/sample_consensus/sac_model_line.h
 -
 pcl/common/centroid.h
@@ -972,33 +962,31 @@ pcl/common/centroid.h
 pcl/common/concatenate.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_normal_parallel_plane.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_normal_parallel_plane.hpp
 pcl/sample_consensus/sac_model_normal_parallel_plane.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_normal_plane.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_normal_plane.hpp
 pcl/sample_consensus/sac_model_normal_plane.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_normal_sphere.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_normal_sphere.hpp
 pcl/sample_consensus/sac_model_normal_sphere.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_parallel_line.hpp
-pcl/common/common.h
--
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_parallel_line.hpp
 pcl/sample_consensus/sac_model_parallel_line.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_parallel_plane.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_parallel_plane.hpp
 pcl/sample_consensus/sac_model_parallel_plane.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_perpendicular_plane.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_perpendicular_plane.hpp
 pcl/sample_consensus/sac_model_perpendicular_plane.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_plane.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_plane.hpp
 pcl/sample_consensus/sac_model_plane.h
 -
 pcl/common/centroid.h
@@ -1010,13 +998,13 @@ pcl/common/concatenate.h
 pcl/point_types.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_sphere.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_sphere.hpp
 pcl/sample_consensus/eigen.h
 -
 pcl/sample_consensus/sac_model_sphere.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/impl/sac_model_stick.hpp
+/usr/include/pcl-1.7/pcl/sample_consensus/impl/sac_model_stick.hpp
 pcl/sample_consensus/sac_model_stick.h
 -
 pcl/common/centroid.h
@@ -1024,7 +1012,7 @@ pcl/common/centroid.h
 pcl/common/concatenate.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/lmeds.h
+/usr/include/pcl-1.7/pcl/sample_consensus/lmeds.h
 pcl/sample_consensus/sac.h
 -
 pcl/sample_consensus/sac_model.h
@@ -1032,9 +1020,9 @@ pcl/sample_consensus/sac_model.h
 pcl/sample_consensus/impl/lmeds.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/method_types.h
+/usr/include/pcl-1.7/pcl/sample_consensus/method_types.h
 
-/usr/include/pcl-1.8/pcl/sample_consensus/mlesac.h
+/usr/include/pcl-1.7/pcl/sample_consensus/mlesac.h
 pcl/sample_consensus/sac.h
 -
 pcl/sample_consensus/sac_model.h
@@ -1042,11 +1030,11 @@ pcl/sample_consensus/sac_model.h
 pcl/sample_consensus/impl/mlesac.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/model_types.h
+/usr/include/pcl-1.7/pcl/sample_consensus/model_types.h
 map
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/msac.h
+/usr/include/pcl-1.7/pcl/sample_consensus/msac.h
 algorithm
 -
 pcl/sample_consensus/sac.h
@@ -1056,7 +1044,7 @@ pcl/sample_consensus/sac_model.h
 pcl/sample_consensus/impl/msac.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/prosac.h
+/usr/include/pcl-1.7/pcl/sample_consensus/prosac.h
 pcl/sample_consensus/sac.h
 -
 pcl/sample_consensus/sac_model.h
@@ -1064,7 +1052,7 @@ pcl/sample_consensus/sac_model.h
 pcl/sample_consensus/impl/prosac.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/ransac.h
+/usr/include/pcl-1.7/pcl/sample_consensus/ransac.h
 pcl/sample_consensus/sac.h
 -
 pcl/sample_consensus/sac_model.h
@@ -1072,7 +1060,7 @@ pcl/sample_consensus/sac_model.h
 pcl/sample_consensus/impl/ransac.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/rmsac.h
+/usr/include/pcl-1.7/pcl/sample_consensus/rmsac.h
 algorithm
 -
 pcl/sample_consensus/sac.h
@@ -1082,7 +1070,7 @@ pcl/sample_consensus/sac_model.h
 pcl/sample_consensus/impl/rmsac.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/rransac.h
+/usr/include/pcl-1.7/pcl/sample_consensus/rransac.h
 pcl/sample_consensus/sac.h
 -
 pcl/sample_consensus/sac_model.h
@@ -1090,7 +1078,7 @@ pcl/sample_consensus/sac_model.h
 pcl/sample_consensus/impl/rransac.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac.h
 pcl/sample_consensus/boost.h
 -
 pcl/sample_consensus/sac_model.h
@@ -1100,7 +1088,7 @@ ctime
 set
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model.h
 cfloat
 -
 ctime
@@ -1120,7 +1108,7 @@ pcl/sample_consensus/model_types.h
 pcl/search/search.h
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_circle.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_circle.h
 pcl/sample_consensus/sac_model.h
 -
 pcl/sample_consensus/model_types.h
@@ -1128,7 +1116,7 @@ pcl/sample_consensus/model_types.h
 pcl/sample_consensus/impl/sac_model_circle.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_circle3d.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_circle3d.h
 pcl/sample_consensus/sac_model.h
 -
 pcl/sample_consensus/model_types.h
@@ -1136,12 +1124,10 @@ pcl/sample_consensus/model_types.h
 pcl/sample_consensus/impl/sac_model_circle3d.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_cone.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_cone.h
 pcl/sample_consensus/sac_model.h
 -
 pcl/sample_consensus/model_types.h
--
-pcl/pcl_macros.h
 -
 pcl/common/common.h
 -
@@ -1152,12 +1138,10 @@ limits.h
 pcl/sample_consensus/impl/sac_model_cone.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_cylinder.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_cylinder.h
 pcl/sample_consensus/sac_model.h
 -
 pcl/sample_consensus/model_types.h
--
-pcl/pcl_macros.h
 -
 pcl/common/common.h
 -
@@ -1166,7 +1150,7 @@ pcl/common/distances.h
 pcl/sample_consensus/impl/sac_model_cylinder.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_line.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_line.h
 pcl/sample_consensus/sac_model.h
 -
 pcl/sample_consensus/model_types.h
@@ -1176,7 +1160,7 @@ pcl/common/eigen.h
 pcl/sample_consensus/impl/sac_model_line.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_normal_parallel_plane.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_normal_parallel_plane.h
 pcl/sample_consensus/sac_model_normal_plane.h
 -
 pcl/sample_consensus/model_types.h
@@ -1184,7 +1168,7 @@ pcl/sample_consensus/model_types.h
 pcl/sample_consensus/impl/sac_model_normal_parallel_plane.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_normal_plane.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_normal_plane.h
 pcl/sample_consensus/sac_model.h
 -
 pcl/sample_consensus/sac_model_plane.h
@@ -1196,7 +1180,7 @@ pcl/sample_consensus/model_types.h
 pcl/sample_consensus/impl/sac_model_normal_plane.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_normal_sphere.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_normal_sphere.h
 pcl/sample_consensus/sac_model.h
 -
 pcl/sample_consensus/sac_model_sphere.h
@@ -1208,13 +1192,15 @@ pcl/common/common.h
 pcl/sample_consensus/impl/sac_model_normal_sphere.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_parallel_line.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_parallel_line.h
 pcl/sample_consensus/sac_model_line.h
+-
+pcl/sample_consensus/sac_model_perpendicular_plane.h
 -
 pcl/sample_consensus/impl/sac_model_parallel_line.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_parallel_plane.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_parallel_plane.h
 pcl/sample_consensus/sac_model_plane.h
 -
 pcl/common/common.h
@@ -1222,7 +1208,7 @@ pcl/common/common.h
 pcl/sample_consensus/impl/sac_model_parallel_plane.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_perpendicular_plane.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_perpendicular_plane.h
 pcl/sample_consensus/sac_model_plane.h
 -
 pcl/common/common.h
@@ -1230,7 +1216,7 @@ pcl/common/common.h
 pcl/sample_consensus/impl/sac_model_perpendicular_plane.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_plane.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_plane.h
 pcl/sample_consensus/sac_model.h
 -
 pcl/sample_consensus/model_types.h
@@ -1238,7 +1224,7 @@ pcl/sample_consensus/model_types.h
 pcl/sample_consensus/impl/sac_model_plane.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_sphere.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_sphere.h
 pcl/sample_consensus/sac_model.h
 -
 pcl/sample_consensus/model_types.h
@@ -1246,7 +1232,7 @@ pcl/sample_consensus/model_types.h
 pcl/sample_consensus/impl/sac_model_sphere.hpp
 -
 
-/usr/include/pcl-1.8/pcl/sample_consensus/sac_model_stick.h
+/usr/include/pcl-1.7/pcl/sample_consensus/sac_model_stick.h
 pcl/sample_consensus/sac_model.h
 -
 pcl/sample_consensus/model_types.h
@@ -1256,13 +1242,13 @@ pcl/common/eigen.h
 pcl/sample_consensus/impl/sac_model_stick.hpp
 -
 
-/usr/include/pcl-1.8/pcl/search/impl/kdtree.hpp
+/usr/include/pcl-1.7/pcl/search/impl/kdtree.hpp
 pcl/search/kdtree.h
 -
 pcl/search/impl/search.hpp
 -
 
-/usr/include/pcl-1.8/pcl/search/impl/organized.hpp
+/usr/include/pcl-1.7/pcl/search/impl/organized.hpp
 pcl/search/organized.h
 -
 pcl/common/eigen.h
@@ -1272,11 +1258,11 @@ pcl/common/time.h
 Eigen/Eigenvalues
 -
 
-/usr/include/pcl-1.8/pcl/search/impl/search.hpp
+/usr/include/pcl-1.7/pcl/search/impl/search.hpp
 pcl/search/search.h
 -
 
-/usr/include/pcl-1.8/pcl/search/kdtree.h
+/usr/include/pcl-1.7/pcl/search/kdtree.h
 pcl/search/search.h
 -
 pcl/kdtree/kdtree_flann.h
@@ -1284,7 +1270,7 @@ pcl/kdtree/kdtree_flann.h
 pcl/search/impl/kdtree.hpp
 -
 
-/usr/include/pcl-1.8/pcl/search/octree.h
+/usr/include/pcl-1.7/pcl/search/octree.h
 pcl/search/search.h
 -
 pcl/octree/octree_search.h
@@ -1292,7 +1278,7 @@ pcl/octree/octree_search.h
 pcl/octree/impl/octree_search.hpp
 -
 
-/usr/include/pcl-1.8/pcl/search/organized.h
+/usr/include/pcl-1.7/pcl/search/organized.h
 pcl/point_cloud.h
 -
 pcl/point_types.h
@@ -1312,7 +1298,7 @@ pcl/common/projection_matrix.h
 pcl/search/impl/organized.hpp
 -
 
-/usr/include/pcl-1.8/pcl/search/pcl_search.h
+/usr/include/pcl-1.7/pcl/search/pcl_search.h
 pcl/search/search.h
 -
 pcl/search/kdtree.h
@@ -1322,7 +1308,7 @@ pcl/search/octree.h
 pcl/search/organized.h
 -
 
-/usr/include/pcl-1.8/pcl/search/search.h
+/usr/include/pcl-1.7/pcl/search/search.h
 pcl/point_cloud.h
 -
 pcl/for_each_type.h
@@ -1334,7 +1320,7 @@ pcl/common/copy_point.h
 pcl/search/impl/search.hpp
 -
 
-/usr/include/pcl-1.8/pcl/segmentation/extract_clusters.h
+/usr/include/pcl-1.7/pcl/segmentation/extract_clusters.h
 pcl/pcl_base.h
 -
 pcl/search/pcl_search.h
@@ -1342,11 +1328,11 @@ pcl/search/pcl_search.h
 pcl/segmentation/impl/extract_clusters.hpp
 -
 
-/usr/include/pcl-1.8/pcl/segmentation/impl/extract_clusters.hpp
+/usr/include/pcl-1.7/pcl/segmentation/impl/extract_clusters.hpp
 pcl/segmentation/extract_clusters.h
 -
 
-/usr/include/pcl-1.8/pcl/segmentation/impl/sac_segmentation.hpp
+/usr/include/pcl-1.7/pcl/segmentation/impl/sac_segmentation.hpp
 pcl/segmentation/sac_segmentation.h
 -
 pcl/sample_consensus/sac.h
@@ -1396,7 +1382,7 @@ pcl/sample_consensus/sac_model_normal_sphere.h
 pcl/sample_consensus/sac_model_stick.h
 -
 
-/usr/include/pcl-1.8/pcl/segmentation/sac_segmentation.h
+/usr/include/pcl-1.7/pcl/segmentation/sac_segmentation.h
 pcl/pcl_base.h
 -
 pcl/PointIndices.h
@@ -1416,33 +1402,53 @@ pcl/search/search.h
 pcl/segmentation/impl/sac_segmentation.hpp
 -
 
+/usr/include/x86_64-linux-gnu/bits/mman-linux.h
+
+/usr/include/x86_64-linux-gnu/bits/mman.h
+bits/mman-linux.h
+-
+
+/usr/include/x86_64-linux-gnu/bits/types.h
+features.h
+-
+bits/wordsize.h
+-
+bits/typesizes.h
+-
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h
+
+/usr/include/x86_64-linux-gnu/sys/mman.h
+features.h
+-
+bits/types.h
+-
+stddef.h
+-
+bits/mman.h
+-
+
 /usr/local/include/eigen3/Eigen/Cholesky
 Core
 /usr/local/include/eigen3/Eigen/Core
-Jacobi
-/usr/local/include/eigen3/Eigen/Jacobi
 src/Core/util/DisableStupidWarnings.h
 /usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+src/misc/Solve.h
+/usr/local/include/eigen3/Eigen/src/misc/Solve.h
 src/Cholesky/LLT.h
 /usr/local/include/eigen3/Eigen/src/Cholesky/LLT.h
 src/Cholesky/LDLT.h
 /usr/local/include/eigen3/Eigen/src/Cholesky/LDLT.h
-mkl_lapacke.h
-/usr/local/include/eigen3/Eigen/mkl_lapacke.h
-src/misc/lapacke.h
-/usr/local/include/eigen3/Eigen/src/misc/lapacke.h
-src/Cholesky/LLT_LAPACKE.h
-/usr/local/include/eigen3/Eigen/src/Cholesky/LLT_LAPACKE.h
+src/Cholesky/LLT_MKL.h
+/usr/local/include/eigen3/Eigen/src/Cholesky/LLT_MKL.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
 /usr/local/include/eigen3/Eigen/Core
 src/Core/util/DisableStupidWarnings.h
 /usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
-cuda_runtime.h
--
-new
--
 src/Core/util/Macros.h
 /usr/local/include/eigen3/Eigen/src/Core/util/Macros.h
 complex
@@ -1452,8 +1458,6 @@ src/Core/util/MKL_support.h
 malloc.h
 -
 immintrin.h
--
-mmintrin.h
 -
 emmintrin.h
 -
@@ -1467,21 +1471,9 @@ smmintrin.h
 -
 nmmintrin.h
 -
-immintrin.h
--
-altivec.h
--
 altivec.h
 -
 arm_neon.h
--
-vecintrin.h
--
-vector_types.h
--
-host_defines.h
--
-cuda_fp16.h
 -
 omp.h
 -
@@ -1509,18 +1501,18 @@ climits
 -
 algorithm
 -
-type_traits
--
 iostream
 -
 intrin.h
 -
+new
+-
 src/Core/util/Constants.h
 /usr/local/include/eigen3/Eigen/src/Core/util/Constants.h
-src/Core/util/Meta.h
-/usr/local/include/eigen3/Eigen/src/Core/util/Meta.h
 src/Core/util/ForwardDeclarations.h
 /usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
+src/Core/util/Meta.h
+/usr/local/include/eigen3/Eigen/src/Core/util/Meta.h
 src/Core/util/StaticAssert.h
 /usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h
 src/Core/util/XprHelper.h
@@ -1533,88 +1525,24 @@ src/Core/MathFunctions.h
 /usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h
 src/Core/GenericPacketMath.h
 /usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h
-src/Core/MathFunctionsImpl.h
-/usr/local/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h
-src/Core/arch/Default/ConjHelper.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h
-src/Core/arch/SSE/PacketMath.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
-src/Core/arch/AVX/PacketMath.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
-src/Core/arch/AVX512/PacketMath.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX512/PacketMath.h
-src/Core/arch/AVX512/MathFunctions.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX512/MathFunctions.h
-src/Core/arch/SSE/PacketMath.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
-src/Core/arch/SSE/Complex.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
-src/Core/arch/SSE/MathFunctions.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
-src/Core/arch/AVX/PacketMath.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
-src/Core/arch/AVX/MathFunctions.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h
-src/Core/arch/AVX/Complex.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
-src/Core/arch/AVX/TypeCasting.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
-src/Core/arch/SSE/TypeCasting.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
 src/Core/arch/SSE/PacketMath.h
 /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
 src/Core/arch/SSE/MathFunctions.h
 /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
 src/Core/arch/SSE/Complex.h
 /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
-src/Core/arch/SSE/TypeCasting.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
 src/Core/arch/AltiVec/PacketMath.h
 /usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
-src/Core/arch/AltiVec/MathFunctions.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
 src/Core/arch/AltiVec/Complex.h
 /usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
 src/Core/arch/NEON/PacketMath.h
 /usr/local/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
-src/Core/arch/NEON/MathFunctions.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
 src/Core/arch/NEON/Complex.h
 /usr/local/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
-src/Core/arch/ZVector/PacketMath.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/ZVector/PacketMath.h
-src/Core/arch/ZVector/MathFunctions.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/ZVector/MathFunctions.h
-src/Core/arch/ZVector/Complex.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/ZVector/Complex.h
-src/Core/arch/CUDA/Half.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/Half.h
-src/Core/arch/CUDA/PacketMathHalf.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMathHalf.h
-src/Core/arch/CUDA/TypeCasting.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/TypeCasting.h
-src/Core/arch/CUDA/PacketMath.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h
-src/Core/arch/CUDA/MathFunctions.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/MathFunctions.h
 src/Core/arch/Default/Settings.h
 /usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
-src/Core/functors/TernaryFunctors.h
-/usr/local/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h
-src/Core/functors/BinaryFunctors.h
-/usr/local/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
-src/Core/functors/UnaryFunctors.h
-/usr/local/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
-src/Core/functors/NullaryFunctors.h
-/usr/local/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
-src/Core/functors/StlFunctors.h
-/usr/local/include/eigen3/Eigen/src/Core/functors/StlFunctors.h
-src/Core/functors/AssignmentFunctors.h
-/usr/local/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
-src/Core/arch/CUDA/Complex.h
-/usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h
-src/Core/IO.h
-/usr/local/include/eigen3/Eigen/src/Core/IO.h
+src/Core/Functors.h
+/usr/local/include/eigen3/Eigen/src/Core/Functors.h
 src/Core/DenseCoeffsBase.h
 /usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
 src/Core/DenseBase.h
@@ -1623,22 +1551,16 @@ src/Core/MatrixBase.h
 /usr/local/include/eigen3/Eigen/src/Core/MatrixBase.h
 src/Core/EigenBase.h
 /usr/local/include/eigen3/Eigen/src/Core/EigenBase.h
-src/Core/Product.h
-/usr/local/include/eigen3/Eigen/src/Core/Product.h
-src/Core/CoreEvaluators.h
-/usr/local/include/eigen3/Eigen/src/Core/CoreEvaluators.h
-src/Core/AssignEvaluator.h
-/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h
 src/Core/Assign.h
 /usr/local/include/eigen3/Eigen/src/Core/Assign.h
-src/Core/ArrayBase.h
-/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h
 src/Core/util/BlasUtil.h
 /usr/local/include/eigen3/Eigen/src/Core/util/BlasUtil.h
 src/Core/DenseStorage.h
 /usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h
 src/Core/NestByValue.h
 /usr/local/include/eigen3/Eigen/src/Core/NestByValue.h
+src/Core/ForceAlignedAccess.h
+/usr/local/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
 src/Core/ReturnByValue.h
 /usr/local/include/eigen3/Eigen/src/Core/ReturnByValue.h
 src/Core/NoAlias.h
@@ -1649,8 +1571,6 @@ src/Core/Matrix.h
 /usr/local/include/eigen3/Eigen/src/Core/Matrix.h
 src/Core/Array.h
 /usr/local/include/eigen3/Eigen/src/Core/Array.h
-src/Core/CwiseTernaryOp.h
-/usr/local/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h
 src/Core/CwiseBinaryOp.h
 /usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
 src/Core/CwiseUnaryOp.h
@@ -1665,18 +1585,18 @@ src/Core/Dot.h
 /usr/local/include/eigen3/Eigen/src/Core/Dot.h
 src/Core/StableNorm.h
 /usr/local/include/eigen3/Eigen/src/Core/StableNorm.h
-src/Core/Stride.h
-/usr/local/include/eigen3/Eigen/src/Core/Stride.h
 src/Core/MapBase.h
 /usr/local/include/eigen3/Eigen/src/Core/MapBase.h
+src/Core/Stride.h
+/usr/local/include/eigen3/Eigen/src/Core/Stride.h
 src/Core/Map.h
 /usr/local/include/eigen3/Eigen/src/Core/Map.h
-src/Core/Ref.h
-/usr/local/include/eigen3/Eigen/src/Core/Ref.h
 src/Core/Block.h
 /usr/local/include/eigen3/Eigen/src/Core/Block.h
 src/Core/VectorBlock.h
 /usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h
+src/Core/Ref.h
+/usr/local/include/eigen3/Eigen/src/Core/Ref.h
 src/Core/Transpose.h
 /usr/local/include/eigen3/Eigen/src/Core/Transpose.h
 src/Core/DiagonalMatrix.h
@@ -1685,28 +1605,28 @@ src/Core/Diagonal.h
 /usr/local/include/eigen3/Eigen/src/Core/Diagonal.h
 src/Core/DiagonalProduct.h
 /usr/local/include/eigen3/Eigen/src/Core/DiagonalProduct.h
+src/Core/PermutationMatrix.h
+/usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h
+src/Core/Transpositions.h
+/usr/local/include/eigen3/Eigen/src/Core/Transpositions.h
 src/Core/Redux.h
 /usr/local/include/eigen3/Eigen/src/Core/Redux.h
 src/Core/Visitor.h
 /usr/local/include/eigen3/Eigen/src/Core/Visitor.h
 src/Core/Fuzzy.h
 /usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h
+src/Core/IO.h
+/usr/local/include/eigen3/Eigen/src/Core/IO.h
 src/Core/Swap.h
 /usr/local/include/eigen3/Eigen/src/Core/Swap.h
 src/Core/CommaInitializer.h
 /usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h
+src/Core/Flagged.h
+/usr/local/include/eigen3/Eigen/src/Core/Flagged.h
+src/Core/ProductBase.h
+/usr/local/include/eigen3/Eigen/src/Core/ProductBase.h
 src/Core/GeneralProduct.h
 /usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h
-src/Core/Solve.h
-/usr/local/include/eigen3/Eigen/src/Core/Solve.h
-src/Core/Inverse.h
-/usr/local/include/eigen3/Eigen/src/Core/Inverse.h
-src/Core/SolverBase.h
-/usr/local/include/eigen3/Eigen/src/Core/SolverBase.h
-src/Core/PermutationMatrix.h
-/usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h
-src/Core/Transpositions.h
-/usr/local/include/eigen3/Eigen/src/Core/Transpositions.h
 src/Core/TriangularMatrix.h
 /usr/local/include/eigen3/Eigen/src/Core/TriangularMatrix.h
 src/Core/SelfAdjointView.h
@@ -1715,8 +1635,8 @@ src/Core/products/GeneralBlockPanelKernel.h
 /usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
 src/Core/products/Parallelizer.h
 /usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h
-src/Core/ProductEvaluators.h
-/usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h
+src/Core/products/CoeffBasedProduct.h
+/usr/local/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
 src/Core/products/GeneralMatrixVector.h
 /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
 src/Core/products/GeneralMatrixMatrix.h
@@ -1745,8 +1665,6 @@ src/Core/BandMatrix.h
 /usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h
 src/Core/CoreIterators.h
 /usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h
-src/Core/ConditionEstimator.h
-/usr/local/include/eigen3/Eigen/src/Core/ConditionEstimator.h
 src/Core/BooleanRedux.h
 /usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h
 src/Core/Select.h
@@ -1759,30 +1677,34 @@ src/Core/Replicate.h
 /usr/local/include/eigen3/Eigen/src/Core/Replicate.h
 src/Core/Reverse.h
 /usr/local/include/eigen3/Eigen/src/Core/Reverse.h
+src/Core/ArrayBase.h
+/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h
 src/Core/ArrayWrapper.h
 /usr/local/include/eigen3/Eigen/src/Core/ArrayWrapper.h
-src/Core/products/GeneralMatrixMatrix_BLAS.h
-/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix_BLAS.h
-src/Core/products/GeneralMatrixVector_BLAS.h
-/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector_BLAS.h
-src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h
-/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h
-src/Core/products/SelfadjointMatrixMatrix_BLAS.h
-/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix_BLAS.h
-src/Core/products/SelfadjointMatrixVector_BLAS.h
-/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector_BLAS.h
-src/Core/products/TriangularMatrixMatrix_BLAS.h
-/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h
-src/Core/products/TriangularMatrixVector_BLAS.h
-/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector_BLAS.h
-src/Core/products/TriangularSolverMatrix_BLAS.h
-/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h
+src/Core/products/GeneralMatrixMatrix_MKL.h
+/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix_MKL.h
+src/Core/products/GeneralMatrixVector_MKL.h
+/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector_MKL.h
+src/Core/products/GeneralMatrixMatrixTriangular_MKL.h
+/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_MKL.h
+src/Core/products/SelfadjointMatrixMatrix_MKL.h
+/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix_MKL.h
+src/Core/products/SelfadjointMatrixVector_MKL.h
+/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector_MKL.h
+src/Core/products/TriangularMatrixMatrix_MKL.h
+/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix_MKL.h
+src/Core/products/TriangularMatrixVector_MKL.h
+/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector_MKL.h
+src/Core/products/TriangularSolverMatrix_MKL.h
+/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix_MKL.h
 src/Core/Assign_MKL.h
 /usr/local/include/eigen3/Eigen/src/Core/Assign_MKL.h
 src/Core/GlobalFunctions.h
 /usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+Eigen2Support
+/usr/local/include/eigen3/Eigen/Eigen2Support
 
 /usr/local/include/eigen3/Eigen/Dense
 Core
@@ -1800,6 +1722,36 @@ Geometry
 Eigenvalues
 /usr/local/include/eigen3/Eigen/Eigenvalues
 
+/usr/local/include/eigen3/Eigen/Eigen2Support
+src/Core/util/DisableStupidWarnings.h
+/usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+src/Eigen2Support/Macros.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Macros.h
+src/Eigen2Support/Memory.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Memory.h
+src/Eigen2Support/Meta.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Meta.h
+src/Eigen2Support/Lazy.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
+src/Eigen2Support/Cwise.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
+src/Eigen2Support/CwiseOperators.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
+src/Eigen2Support/TriangularSolver.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
+src/Eigen2Support/Block.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Block.h
+src/Eigen2Support/VectorBlock.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
+src/Eigen2Support/Minor.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Minor.h
+src/Eigen2Support/MathFunctions.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
+src/Core/util/ReenableStupidWarnings.h
+/usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+iostream
+-
+
 /usr/local/include/eigen3/Eigen/Eigenvalues
 Core
 /usr/local/include/eigen3/Eigen/Core
@@ -1815,8 +1767,6 @@ LU
 /usr/local/include/eigen3/Eigen/LU
 Geometry
 /usr/local/include/eigen3/Eigen/Geometry
-src/misc/RealSvd2x2.h
-/usr/local/include/eigen3/Eigen/src/misc/RealSvd2x2.h
 src/Eigenvalues/Tridiagonalization.h
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h
 src/Eigenvalues/RealSchur.h
@@ -1839,16 +1789,12 @@ src/Eigenvalues/GeneralizedEigenSolver.h
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
 src/Eigenvalues/MatrixBaseEigenvalues.h
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
-mkl_lapacke.h
-/usr/local/include/eigen3/Eigen/mkl_lapacke.h
-src/misc/lapacke.h
-/usr/local/include/eigen3/Eigen/src/misc/lapacke.h
-src/Eigenvalues/RealSchur_LAPACKE.h
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/RealSchur_LAPACKE.h
-src/Eigenvalues/ComplexSchur_LAPACKE.h
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h
-src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h
+src/Eigenvalues/RealSchur_MKL.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/RealSchur_MKL.h
+src/Eigenvalues/ComplexSchur_MKL.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur_MKL.h
+src/Eigenvalues/SelfAdjointEigenSolver_MKL.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_MKL.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
@@ -1893,6 +1839,8 @@ src/Geometry/Umeyama.h
 /usr/local/include/eigen3/Eigen/src/Geometry/Umeyama.h
 src/Geometry/arch/Geometry_SSE.h
 /usr/local/include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h
+src/Eigen2Support/Geometry/All.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/All.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
@@ -1925,6 +1873,8 @@ Core
 /usr/local/include/eigen3/Eigen/Core
 src/Core/util/DisableStupidWarnings.h
 /usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+src/misc/Solve.h
+/usr/local/include/eigen3/Eigen/src/misc/Solve.h
 src/misc/Kernel.h
 /usr/local/include/eigen3/Eigen/src/misc/Kernel.h
 src/misc/Image.h
@@ -1933,18 +1883,16 @@ src/LU/FullPivLU.h
 /usr/local/include/eigen3/Eigen/src/LU/FullPivLU.h
 src/LU/PartialPivLU.h
 /usr/local/include/eigen3/Eigen/src/LU/PartialPivLU.h
-mkl_lapacke.h
-/usr/local/include/eigen3/Eigen/mkl_lapacke.h
-src/misc/lapacke.h
-/usr/local/include/eigen3/Eigen/src/misc/lapacke.h
-src/LU/PartialPivLU_LAPACKE.h
-/usr/local/include/eigen3/Eigen/src/LU/PartialPivLU_LAPACKE.h
+src/LU/PartialPivLU_MKL.h
+/usr/local/include/eigen3/Eigen/src/LU/PartialPivLU_MKL.h
 src/LU/Determinant.h
 /usr/local/include/eigen3/Eigen/src/LU/Determinant.h
-src/LU/InverseImpl.h
-/usr/local/include/eigen3/Eigen/src/LU/InverseImpl.h
+src/LU/Inverse.h
+/usr/local/include/eigen3/Eigen/src/LU/Inverse.h
 src/LU/arch/Inverse_SSE.h
 /usr/local/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
+src/Eigen2Support/LU.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/LU.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
@@ -1959,24 +1907,24 @@ Jacobi
 /usr/local/include/eigen3/Eigen/Jacobi
 Householder
 /usr/local/include/eigen3/Eigen/Householder
+src/misc/Solve.h
+/usr/local/include/eigen3/Eigen/src/misc/Solve.h
 src/QR/HouseholderQR.h
 /usr/local/include/eigen3/Eigen/src/QR/HouseholderQR.h
 src/QR/FullPivHouseholderQR.h
 /usr/local/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h
 src/QR/ColPivHouseholderQR.h
 /usr/local/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h
-src/QR/CompleteOrthogonalDecomposition.h
-/usr/local/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h
-mkl_lapacke.h
-/usr/local/include/eigen3/Eigen/mkl_lapacke.h
-src/misc/lapacke.h
-/usr/local/include/eigen3/Eigen/src/misc/lapacke.h
-src/QR/HouseholderQR_LAPACKE.h
-/usr/local/include/eigen3/Eigen/src/QR/HouseholderQR_LAPACKE.h
-src/QR/ColPivHouseholderQR_LAPACKE.h
-/usr/local/include/eigen3/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h
+src/QR/HouseholderQR_MKL.h
+/usr/local/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
+src/QR/ColPivHouseholderQR_MKL.h
+/usr/local/include/eigen3/Eigen/src/QR/ColPivHouseholderQR_MKL.h
+src/Eigen2Support/QR.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/QR.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+Eigenvalues
+/usr/local/include/eigen3/Eigen/Eigenvalues
 
 /usr/local/include/eigen3/Eigen/SVD
 QR
@@ -1987,22 +1935,16 @@ Jacobi
 /usr/local/include/eigen3/Eigen/Jacobi
 src/Core/util/DisableStupidWarnings.h
 /usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
-src/misc/RealSvd2x2.h
-/usr/local/include/eigen3/Eigen/src/misc/RealSvd2x2.h
-src/SVD/UpperBidiagonalization.h
-/usr/local/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
-src/SVD/SVDBase.h
-/usr/local/include/eigen3/Eigen/src/SVD/SVDBase.h
+src/misc/Solve.h
+/usr/local/include/eigen3/Eigen/src/misc/Solve.h
 src/SVD/JacobiSVD.h
 /usr/local/include/eigen3/Eigen/src/SVD/JacobiSVD.h
-src/SVD/BDCSVD.h
-/usr/local/include/eigen3/Eigen/src/SVD/BDCSVD.h
-mkl_lapacke.h
-/usr/local/include/eigen3/Eigen/mkl_lapacke.h
-src/misc/lapacke.h
-/usr/local/include/eigen3/Eigen/src/misc/lapacke.h
-src/SVD/JacobiSVD_LAPACKE.h
-/usr/local/include/eigen3/Eigen/src/SVD/JacobiSVD_LAPACKE.h
+src/SVD/JacobiSVD_MKL.h
+/usr/local/include/eigen3/Eigen/src/SVD/JacobiSVD_MKL.h
+src/SVD/UpperBidiagonalization.h
+/usr/local/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
+src/Eigen2Support/SVD.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/SVD.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
@@ -2018,7 +1960,11 @@ src/StlSupport/StdVector.h
 
 /usr/local/include/eigen3/Eigen/src/Cholesky/LLT.h
 
-/usr/local/include/eigen3/Eigen/src/Cholesky/LLT_LAPACKE.h
+/usr/local/include/eigen3/Eigen/src/Cholesky/LLT_MKL.h
+Eigen/src/Core/util/MKL_support.h
+/usr/local/include/eigen3/Eigen/src/Cholesky/Eigen/src/Core/util/MKL_support.h
+iostream
+-
 
 /usr/local/include/eigen3/Eigen/src/Core/Array.h
 
@@ -2040,8 +1986,6 @@ src/StlSupport/StdVector.h
 
 /usr/local/include/eigen3/Eigen/src/Core/Assign.h
 
-/usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h
-
 /usr/local/include/eigen3/Eigen/src/Core/Assign_MKL.h
 
 /usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h
@@ -2052,17 +1996,11 @@ src/StlSupport/StdVector.h
 
 /usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h
 
-/usr/local/include/eigen3/Eigen/src/Core/ConditionEstimator.h
-
-/usr/local/include/eigen3/Eigen/src/Core/CoreEvaluators.h
-
 /usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h
 
 /usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
 
 /usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
-
-/usr/local/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h
 
 /usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
 
@@ -2086,6 +2024,12 @@ src/StlSupport/StdVector.h
 
 /usr/local/include/eigen3/Eigen/src/Core/EigenBase.h
 
+/usr/local/include/eigen3/Eigen/src/Core/Flagged.h
+
+/usr/local/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
+
+/usr/local/include/eigen3/Eigen/src/Core/Functors.h
+
 /usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h
 
 /usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h
@@ -2096,15 +2040,11 @@ src/StlSupport/StdVector.h
 
 /usr/local/include/eigen3/Eigen/src/Core/IO.h
 
-/usr/local/include/eigen3/Eigen/src/Core/Inverse.h
-
 /usr/local/include/eigen3/Eigen/src/Core/Map.h
 
 /usr/local/include/eigen3/Eigen/src/Core/MapBase.h
 
 /usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h
-
-/usr/local/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h
 
 /usr/local/include/eigen3/Eigen/src/Core/Matrix.h
 
@@ -2128,9 +2068,7 @@ src/StlSupport/StdVector.h
 
 /usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h
 
-/usr/local/include/eigen3/Eigen/src/Core/Product.h
-
-/usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h
+/usr/local/include/eigen3/Eigen/src/Core/ProductBase.h
 
 /usr/local/include/eigen3/Eigen/src/Core/Random.h
 
@@ -2150,11 +2088,7 @@ src/StlSupport/StdVector.h
 
 /usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
 
-/usr/local/include/eigen3/Eigen/src/Core/Solve.h
-
 /usr/local/include/eigen3/Eigen/src/Core/SolveTriangular.h
-
-/usr/local/include/eigen3/Eigen/src/Core/SolverBase.h
 
 /usr/local/include/eigen3/Eigen/src/Core/StableNorm.h
 
@@ -2174,43 +2108,13 @@ src/StlSupport/StdVector.h
 
 /usr/local/include/eigen3/Eigen/src/Core/Visitor.h
 
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX512/MathFunctions.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/AVX512/PacketMath.h
-
 /usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
 
-/usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
-
 /usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/Half.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/MathFunctions.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMathHalf.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/CUDA/TypeCasting.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h
 
 /usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
 
 /usr/local/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
 
 /usr/local/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
 
@@ -2220,27 +2124,7 @@ src/StlSupport/StdVector.h
 
 /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
 
-/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/ZVector/Complex.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/ZVector/MathFunctions.h
-
-/usr/local/include/eigen3/Eigen/src/Core/arch/ZVector/PacketMath.h
-stdint.h
--
-
-/usr/local/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
-
-/usr/local/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
-
-/usr/local/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
-
-/usr/local/include/eigen3/Eigen/src/Core/functors/StlFunctors.h
-
-/usr/local/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h
-
-/usr/local/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
+/usr/local/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
 
 /usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
 
@@ -2248,23 +2132,23 @@ stdint.h
 
 /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
 
-/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h
+/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_MKL.h
 
-/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix_BLAS.h
+/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix_MKL.h
 
 /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
 
-/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector_BLAS.h
+/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector_MKL.h
 
 /usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h
 
 /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
 
-/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix_BLAS.h
+/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix_MKL.h
 
 /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
 
-/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector_BLAS.h
+/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector_MKL.h
 
 /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
 
@@ -2272,15 +2156,15 @@ stdint.h
 
 /usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
 
-/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h
+/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix_MKL.h
 
 /usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h
 
-/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector_BLAS.h
+/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector_MKL.h
 
 /usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
 
-/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h
+/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix_MKL.h
 
 /usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h
 
@@ -2295,8 +2179,8 @@ stdint.h
 /usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h
 mkl.h
 -
-../../misc/blas.h
-/usr/local/include/eigen3/Eigen/src/misc/blas.h
+mkl_lapacke.h
+-
 
 /usr/local/include/eigen3/Eigen/src/Core/util/Macros.h
 cstdlib
@@ -2305,14 +2189,10 @@ iostream
 -
 
 /usr/local/include/eigen3/Eigen/src/Core/util/Memory.h
+unistd.h
+-
 
 /usr/local/include/eigen3/Eigen/src/Core/util/Meta.h
-cfloat
--
-math_constants.h
--
-cstdint
--
 
 /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
@@ -2320,27 +2200,135 @@ cstdint
 
 /usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h
 
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Block.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/All.h
+limits
+-
+RotationBase.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
+Rotation2D.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
+Quaternion.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
+AngleAxis.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
+Transform.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
+Translation.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
+Scaling.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
+AlignedBox.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
+Hyperplane.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
+ParametrizedLine.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
+RotationBase.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
+Rotation2D.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
+Quaternion.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
+AngleAxis.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
+Transform.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
+Translation.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
+Scaling.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
+AlignedBox.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
+Hyperplane.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
+ParametrizedLine.h
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/LU.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Macros.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Memory.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Meta.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/Minor.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/QR.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/SVD.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
+
+/usr/local/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
+
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/./ComplexSchur.h
+./HessenbergDecomposition.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/././HessenbergDecomposition.h
+
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/./HessenbergDecomposition.h
+
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h
+
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/./RealSchur.h
+./HessenbergDecomposition.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/././HessenbergDecomposition.h
+
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/./Tridiagonalization.h
+
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h
 ./ComplexSchur.h
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/./ComplexSchur.h
 
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h
 ./HessenbergDecomposition.h
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/./HessenbergDecomposition.h
 
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur_MKL.h
+Eigen/src/Core/util/MKL_support.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/Eigen/src/Core/util/MKL_support.h
 
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h
 ./RealSchur.h
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/./RealSchur.h
 
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
 ./RealQZ.h
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/./RealQZ.h
 
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
 ./Tridiagonalization.h
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/./Tridiagonalization.h
 
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h
 
@@ -2350,15 +2338,19 @@ cstdint
 
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h
 ./HessenbergDecomposition.h
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/./HessenbergDecomposition.h
 
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/RealSchur_LAPACKE.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/RealSchur_MKL.h
+Eigen/src/Core/util/MKL_support.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/Eigen/src/Core/util/MKL_support.h
 
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
 ./Tridiagonalization.h
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/./Tridiagonalization.h
 
-/usr/local/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_MKL.h
+Eigen/src/Core/util/MKL_support.h
+/usr/local/include/eigen3/Eigen/src/Eigenvalues/Eigen/src/Core/util/MKL_support.h
 
 /usr/local/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h
 
@@ -2404,33 +2396,35 @@ cstdint
 
 /usr/local/include/eigen3/Eigen/src/LU/FullPivLU.h
 
-/usr/local/include/eigen3/Eigen/src/LU/InverseImpl.h
+/usr/local/include/eigen3/Eigen/src/LU/Inverse.h
 
 /usr/local/include/eigen3/Eigen/src/LU/PartialPivLU.h
 
-/usr/local/include/eigen3/Eigen/src/LU/PartialPivLU_LAPACKE.h
+/usr/local/include/eigen3/Eigen/src/LU/PartialPivLU_MKL.h
+Eigen/src/Core/util/MKL_support.h
+/usr/local/include/eigen3/Eigen/src/LU/Eigen/src/Core/util/MKL_support.h
 
 /usr/local/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
 
 /usr/local/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h
 
-/usr/local/include/eigen3/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h
-
-/usr/local/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+/usr/local/include/eigen3/Eigen/src/QR/ColPivHouseholderQR_MKL.h
+Eigen/src/Core/util/MKL_support.h
+/usr/local/include/eigen3/Eigen/src/QR/Eigen/src/Core/util/MKL_support.h
 
 /usr/local/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h
 
 /usr/local/include/eigen3/Eigen/src/QR/HouseholderQR.h
 
-/usr/local/include/eigen3/Eigen/src/QR/HouseholderQR_LAPACKE.h
-
-/usr/local/include/eigen3/Eigen/src/SVD/BDCSVD.h
+/usr/local/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
+../Core/util/MKL_support.h
+/usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h
 
 /usr/local/include/eigen3/Eigen/src/SVD/JacobiSVD.h
 
-/usr/local/include/eigen3/Eigen/src/SVD/JacobiSVD_LAPACKE.h
-
-/usr/local/include/eigen3/Eigen/src/SVD/SVDBase.h
+/usr/local/include/eigen3/Eigen/src/SVD/JacobiSVD_MKL.h
+Eigen/src/Core/util/MKL_support.h
+/usr/local/include/eigen3/Eigen/src/SVD/Eigen/src/Core/util/MKL_support.h
 
 /usr/local/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
 
@@ -2444,23 +2438,7 @@ details.h
 
 /usr/local/include/eigen3/Eigen/src/misc/Kernel.h
 
-/usr/local/include/eigen3/Eigen/src/misc/RealSvd2x2.h
-
-/usr/local/include/eigen3/Eigen/src/misc/blas.h
-
-/usr/local/include/eigen3/Eigen/src/misc/lapacke.h
-lapacke_config.h
-/usr/local/include/eigen3/Eigen/src/misc/lapacke_config.h
-stdlib.h
--
-complex.h
--
-complex.h
--
-lapacke_mangling.h
-/usr/local/include/eigen3/Eigen/src/misc/lapacke_mangling.h
-
-/usr/local/include/eigen3/Eigen/src/misc/lapacke_mangling.h
+/usr/local/include/eigen3/Eigen/src/misc/Solve.h
 
 /usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
 

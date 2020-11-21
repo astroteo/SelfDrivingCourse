@@ -1,65 +1,55 @@
-Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /media/nacho/DATA/AD_course_2020_code/Sensors/pcl/voxel_filtering/build/CMakeFiles/CMakeTmp
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/teo-ssd/Documents/SelfDrivingCourse/pcl/1_voxel_filtering/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_bf59a/fast && /usr/bin/make -f CMakeFiles/cmTC_bf59a.dir/build.make CMakeFiles/cmTC_bf59a.dir/build
-make[1]: Entering directory '/media/nacho/DATA/AD_course_2020_code/Sensors/pcl/voxel_filtering/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bf59a.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_bf59a.dir/src.c.o   -c /media/nacho/DATA/AD_course_2020_code/Sensors/pcl/voxel_filtering/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_bf59a
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf59a.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_bf59a.dir/src.c.o  -o cmTC_bf59a 
-CMakeFiles/cmTC_bf59a.dir/src.c.o: In function `main':
-src.c:(.text+0x3e): undefined reference to `pthread_create'
-src.c:(.text+0x4a): undefined reference to `pthread_detach'
-src.c:(.text+0x56): undefined reference to `pthread_cancel'
-src.c:(.text+0x67): undefined reference to `pthread_join'
-src.c:(.text+0x7b): undefined reference to `pthread_atfork'
+Run Build Command:"/usr/bin/make" "cmTC_577bd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_577bd.dir/build.make CMakeFiles/cmTC_577bd.dir/build
+make[1]: Entering directory '/home/teo-ssd/Documents/SelfDrivingCourse/pcl/1_voxel_filtering/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_577bd.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_577bd.dir/CheckSymbolExists.c.o   -c /home/teo-ssd/Documents/SelfDrivingCourse/pcl/1_voxel_filtering/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_577bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_577bd.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_577bd.dir/CheckSymbolExists.c.o  -o cmTC_577bd -rdynamic 
+CMakeFiles/cmTC_577bd.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_bf59a.dir/build.make:103: recipe for target 'cmTC_bf59a' failed
-make[1]: *** [cmTC_bf59a] Error 1
-make[1]: Leaving directory '/media/nacho/DATA/AD_course_2020_code/Sensors/pcl/voxel_filtering/build/CMakeFiles/CMakeTmp'
-Makefile:138: recipe for target 'cmTC_bf59a/fast' failed
-make: *** [cmTC_bf59a/fast] Error 2
+CMakeFiles/cmTC_577bd.dir/build.make:97: recipe for target 'cmTC_577bd' failed
+make[1]: *** [cmTC_577bd] Error 1
+make[1]: Leaving directory '/home/teo-ssd/Documents/SelfDrivingCourse/pcl/1_voxel_filtering/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_577bd/fast' failed
+make: *** [cmTC_577bd/fast] Error 2
 
-
-Source file was:
+File /home/teo-ssd/Documents/SelfDrivingCourse/pcl/1_voxel_filtering/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
 #include <pthread.h>
 
-void* test_func(void* data)
+int main(int argc, char** argv)
 {
-  return data;
-}
-
-int main(void)
-{
-  pthread_t thread;
-  pthread_create(&thread, NULL, test_func, NULL);
-  pthread_detach(thread);
-  pthread_cancel(thread);
-  pthread_join(thread, NULL);
-  pthread_atfork(NULL, NULL, NULL);
-  pthread_exit(NULL);
-
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
   return 0;
+#endif
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /media/nacho/DATA/AD_course_2020_code/Sensors/pcl/voxel_filtering/build/CMakeFiles/CMakeTmp
+Change Dir: /home/teo-ssd/Documents/SelfDrivingCourse/pcl/1_voxel_filtering/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_11e17/fast && /usr/bin/make -f CMakeFiles/cmTC_11e17.dir/build.make CMakeFiles/cmTC_11e17.dir/build
-make[1]: Entering directory '/media/nacho/DATA/AD_course_2020_code/Sensors/pcl/voxel_filtering/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_11e17.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_11e17.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.17/Modules/CheckFunctionExists.c
-Linking C executable cmTC_11e17
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11e17.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_11e17.dir/CheckFunctionExists.c.o  -o cmTC_11e17  -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_45541/fast"
+/usr/bin/make -f CMakeFiles/cmTC_45541.dir/build.make CMakeFiles/cmTC_45541.dir/build
+make[1]: Entering directory '/home/teo-ssd/Documents/SelfDrivingCourse/pcl/1_voxel_filtering/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45541.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_45541.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_45541
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45541.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_45541.dir/CheckFunctionExists.c.o  -o cmTC_45541 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_11e17.dir/build.make:103: recipe for target 'cmTC_11e17' failed
-make[1]: *** [cmTC_11e17] Error 1
-make[1]: Leaving directory '/media/nacho/DATA/AD_course_2020_code/Sensors/pcl/voxel_filtering/build/CMakeFiles/CMakeTmp'
-Makefile:138: recipe for target 'cmTC_11e17/fast' failed
-make: *** [cmTC_11e17/fast] Error 2
-
+CMakeFiles/cmTC_45541.dir/build.make:97: recipe for target 'cmTC_45541' failed
+make[1]: *** [cmTC_45541] Error 1
+make[1]: Leaving directory '/home/teo-ssd/Documents/SelfDrivingCourse/pcl/1_voxel_filtering/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_45541/fast' failed
+make: *** [cmTC_45541/fast] Error 2
 
 

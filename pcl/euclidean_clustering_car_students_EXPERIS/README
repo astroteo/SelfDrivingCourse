@@ -1,0 +1,18 @@
+REQUIREMENTS:
+-PCL LIBRARY (sudo apt-get install pcl-tools | sudo apt install libpcl-dev)
+-cmake (sudo apt-get install cmake)
+
+cd build
+cmake ..
+make
+./cluster_extraction
+
+------
+
+
+IMPORTANT:
+You have to change the following line of code:
+  std::vector<boost::filesystem::path> stream(boost::filesystem::directory_iterator{"/media/nacho/DATA/AD_course_2020_code/Sensors/pcl/dataset_1/"},
+                                             boost::filesystem::directory_iterator{});
+
+into the path that contains your dataset 

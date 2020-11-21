@@ -2,6 +2,9 @@
 \usepackage{blindtext}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{amsmath}
 
 \begin{document}
 \title{Perception and localization}
@@ -21,14 +24,88 @@ The assumed sensor-suite is the following
 \hline
 \textbf{Perception}& LiDAR, Camera&\\
 \hline
-
+					& Ultrasonic&\\
+\hline
+					& Event camera&\\
+\hline
+\hline
+\textbf{Navigation}& IMU,GPS&\\
+\hline
 \end{tabular}
 \end{center}
+
+%Therefore sensors are splitted into two main classes
+%\begin{itemize}
+%\item{\textbf{•}}
+%\item{\textbf{•}}
+%\end{itemize}
 
 
 \section{Extended Kalman Filter}
 
-The puprose of extended kalman filter in AD problem is to track objects .
+The purpose of extended kalman filter in AD problem is to track objects.\\
+
+The assumed dynamic for all object is the following:
+\begin{align*}
+\vec{x}_{k+1} &= A_k \vec{x}_k + B_k \vec{u}_k  \\
+\vec{x}_{k} &= C_k \vec{z}_k
+\end{align*} 
+
+For each tracked object is assumed a state ($\vec{x} $) and an observation ($\vec{z} $).\\
+\begin{align*}
+\vec{x}_{k+1} &= A_k \vec{x}_k + B_k \vec{u}_k  \\
+\vec{x}_{k} &= C_k \vec{z}_k
+\end{align*} 
+
+The object state is defined as: 
+\begin{align}
+    \vec{x} &= \begin{bmatrix}
+           	    x  \\
+           		y \\
+               v_x \\
+          	   v_y\\
+         \end{bmatrix}
+\end{align}
+
+and 
+
+
+The object's motions is assumed to be a \textsl{"random walker"} process, such that:
+\begin{align}
+   A_k &= \begin{pmatrix}
+           	    1 & 0    & \Delta t & 0  \\
+           		0 & 1    & 0        & \Delta t \\
+                0 & 0    &        1 & 0 \\
+          	    0 & 0    & 0       & 1 \\
+         \end{pmatrix}
+\end{align}
+\begin{algorithm}[H]
+\caption{Put your caption here}
+\begin{algorithmic}[1]
+
+    \For {$o_j \in {o1,o2,...oN}$} \Comment{track all objects}
+%    \If{$condition = True$}
+%        \State Do this
+%        \If{$Condition \geq 1$}
+%        \State Do that
+%        \ElsIf{$Condition \neq 5$}
+%        \State Do another
+%        \State Do that as well
+%        \Else
+%        \State Do otherwise
+%        \EndIf
+%    \EndIf
+ 	\State Initialization: $ $
+	\State Update Step: $ $
+	\State Predict Step: $ $
+    \EndFor
+    \While{$something \not= 0$}  \Comment{put some comments here}
+        \State $var1 \leftarrow var2$  \Comment{another comment}
+        \State $var3 \leftarrow var4$
+    \EndWhile  \label{roy's loop}
+\end{algorithmic}
+\end{algorithm}
+
 
 \section{Particle Filter}
 Vehicle ego-localization via particle filter
