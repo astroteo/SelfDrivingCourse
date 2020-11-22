@@ -25,7 +25,7 @@ ProcessAndRenderPointCloud (Renderer& renderer, pcl::PointCloud<pcl::PointXYZ>::
   // 1) Downsample the dataset
   pcl::VoxelGrid<pcl::PointXYZ> sor;
   sor.setInputCloud(cloud);
-  sor.setLeafSize (0.1f, 0.1f, 0.1f); //this value defines how much the PC is filtered
+  sor.setLeafSize (0.2f, 0.2f, 0.2f); //this value defines how much the PC is filtered
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_filtered (new   pcl::PointCloud<pcl::PointXYZ>);
   sor.filter (*cloud_filtered);
 
@@ -51,7 +51,7 @@ ProcessAndRenderPointCloud (Renderer& renderer, pcl::PointCloud<pcl::PointXYZ>::
   seg.setModelType (pcl::SACMODEL_PLANE);
   seg.setMethodType (pcl::SAC_RANSAC);
   seg.setMaxIterations (1000);
-  seg.setDistanceThreshold (0.61); // determines how close a point must be to the model in order to be considered an inlier
+  seg.setDistanceThreshold (0.1); // determines how close a point must be to the model in order to be considered an inlier
 
 
 
@@ -102,12 +102,12 @@ ProcessAndRenderPointCloud (Renderer& renderer, pcl::PointCloud<pcl::PointXYZ>::
 
   //Set the spatial tolerance for new cluster candidates
   //If you take a very small value, it can happen that an actual object can be seen as multiple clusters. On the other hand, if you set the value too high, it could happen, that multiple objects are seen as one cluster
-  ec.setClusterTolerance (0.2); // 2cm
+  ec.setClusterTolerance (0.5); // 2cm
 
   // 7) Set up the euclidean cluster parameters
   //We impose that the clusters found must have at least setMinClusterSize() points and maximum setMaxClusterSize() points
-  ec.setMinClusterSize (10);
-  ec.setMaxClusterSize (250000);
+  ec.setMinClusterSize (200);
+  ec.setMaxClusterSize (25000);
   ec.setSearchMethod (tree);
   ec.setInputCloud (cloud_filtered);
   ec.extract (cluster_indices);
